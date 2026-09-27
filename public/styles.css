@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Core Social Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-mark">AI</div>
+          <div>
+            <p class="eyebrow">CORE SYSTEM</p>
+            <h1>Social Hub</h1>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active">Overview</button>
+          <button class="nav-item">Accounts</button>
+          <button class="nav-item">Content</button>
+          <button class="nav-item">Analytics</button>
+          <button class="nav-item">Automation</button>
+        </nav>
+
+        <div class="mini-panel">
+          <p class="eyebrow">AUTONOMY</p>
+          <strong>92% self-running</strong>
+          <span>Daily publishing loop is active</span>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">OPERATION STATUS</p>
+            <h2>AI publishing engine online</h2>
+          </div>
+          <div class="status-pill">Live • 24/7</div>
+        </header>
+
+        <section class="hero-grid">
+          <div class="hero-card accent">
+            <div class="card-header">
+              <span>Daily output</span>
+              <span class="spark">+18.2%</span>
+            </div>
+            <h3 id="dailyOutput">12 posts</h3>
+            <p>Across all active accounts and channels.</p>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-header">
+              <span>Engagement</span>
+              <span class="spark">▲</span>
+            </div>
+            <h3 id="engagement">+28.4%</h3>
+            <p>Campaigns are outperforming the last 30-day baseline.</p>
+          </div>
+
+          <div class="hero-card highlight">
+            <div class="card-header">
+              <span>Approval rate</span>
+              <span class="spark">AI</span>
+            </div>
+            <h3 id="approvalRate">96%</h3>
+            <p>Human review only catches edge cases and positioning.</p>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Managed accounts</h3>
+              <button id="generatePostBtn" class="action-btn">Generate post</button>
+            </div>
+            <div id="accountsList" class="accounts-list"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Daily queue</h3>
+              <button id="scheduleBtn" class="action-btn secondary">Schedule next</button>
+            </div>
+            <div id="queueList" class="queue-list"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

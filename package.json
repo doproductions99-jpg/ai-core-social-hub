@@ -1,0 +1,13 @@
+{
+  "name": "ai-core-social-hub",
+  "version": "1.0.0",
+  "description": "AI Core + HUD dashboard for social media account creation and daily posting automation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
